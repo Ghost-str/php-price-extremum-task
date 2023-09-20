@@ -116,7 +116,7 @@ class PriceHistoryStorage {
             return;
         }
 
-        $inteval_state['last_price_index']++;
+        $interval_state['last_price_index']++;
         $recalculate = $is_recalculate || !($data_item['price'] === $interval_state['min_price'] || $data_item['price'] === $interval_state['max_price']);
         
         $this->checkLastValue($interval,  $recalculate);
